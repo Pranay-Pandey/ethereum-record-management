@@ -691,9 +691,8 @@ export const loginPatient = async (aadhar, privateKey) => {
 
 
 
-
-
-import {tezos} from "./tezos";
+// redundant code
+const tezos = "Ethereums";
 import axios from "axios";
 import internal from "stream";
 
@@ -879,3 +878,23 @@ export const set_both_name_age = async () => {
 export const endGameOperation = async () => {
    
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
