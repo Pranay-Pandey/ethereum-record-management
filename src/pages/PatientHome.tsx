@@ -126,51 +126,10 @@ const PatientHome = () => {
         console.log("error = ", e)
     }
 
-
-    // try {
-    //   const config = {
-    //     maxBodyLength: Infinity,
-    //     headers: {
-    //       'Content-Type': 'application/json'
-    //     }
-    //   }
-    //   setKey(prev => (
-    //     {
-    //       ...prev,
-    //       privateKey: key.privateKey.replace(/\\n/g, '\n')
-    //     }
-    //   ))
-    //   const response = await axios.post("https://efficacious-writing-production.up.railway.app/api/get_diagnosis", key, config);
-
-    //   const { message, data, doctorAccess, hashedAadhar } = response.data;
-    //   console.log("doctorAccess: ", doctorAccess)
-    //   setAccess(doctorAccess);
-    //   setHashedAadhar(hashedAadhar);
-    //   // console.log(data)
-    //   setData(data);
-
-    //   const newDiagnosisElements = data.map((item: any) => (
-    //     <DiagnosisCard
-    //       key={item._id}
-    //       symptoms={item.data.symptoms}
-    //       doctorName={item.data.doctorName}
-    //       diagnosis={item.data.diagnosis}
-    //       document={item.data.document}
-    //       patientName={item.data.patientName}
-    //       docType={item.data.docType}
-    //       upload={false}
-    //     />
-    //   ));
-    //   setHistory(newDiagnosisElements);
-
-    // } catch (error) {
-    //   console.log(error);
-
-    // }
   }
 
   async function remove(item: any){
-    let removeAccess = await controlVisibility(item, hashedAadhar);
+    console.log("remove function called")
   }
 
   return (

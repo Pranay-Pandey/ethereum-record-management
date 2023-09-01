@@ -45,75 +45,15 @@ export default function SignupCard() {
         return values.every(value => value.trim().length > 0);
     }
 
-    // const handleSubmit = async () =>{
-
-    //     let data;
-
-    //     await loginPatient(form.aadhar, 
-    //     "dfgdfgdfgdfg").then(result=>{
-    //         console.log("result is as follows = ")
-    //         console.log(result)
-    //         data = result;
-    //     });
-        
-    //     setForm(prev=>({
-    //         ...prev, 
-    //         privateKey: form.privateKey.replace(/\\n/g, '\n')
-    //     }))
-    //     const url = 'http://localhost:4000/api/login'
-    //     let config = {
-    //         maxBodyLength: Infinity, 
-    //         headers: {
-    //             'Content-Type': 'application/json'
-    //         }
-    //     };
-
-    //     console.log("data = ")
-
-    // const req = {
-    //     RSAencryptedAESKEY : data.publicKey.RSAencryptedcipherKey,
-    //     privateKey: form.privateKey,
-    //     name: data.name,
-    //     age: data.age,
-    //     sex: data.sex, 
-    //     aadhar: form.aadhar
-    // }
-
-    // axios.post(url, req, config)
-    //   .then((response) => {
-    //     console.log(response.data)
-    //     const {message, name, age, sex, aadhar, token} = response.data;
-    //     setSessionLogin("true");
-    //     setSessionToken(token);
-    //     setSessionUser(JSON.stringify({name,age,sex,aadhar}))
-    //     navigate('/patient_home')
-    //     window.location.reload();
-
-    //   })
-    //   .catch((error) => {
-    //     console.log(error.message)
-    //   });
-
-
-    // }
-
-
     const handleSubmit = async () => {
         try {
-          // Step 1: Send a POST request to 'http://localhost:4000/api/makeSHAhash'
           const shaHashResponse = await axios.post('http://localhost:4000/api/makeSHAhash', {
             aadhar: form.aadhar,
           });
       
           // Extract the hashedAadhar from the response
           const hashedAadhar = shaHashResponse.data.hashedAadhar;
-      
-          // Step 2: Call loginPatient with the hashed Aadhar
-          const loginResponse = await loginPatient(hashedAadhar, "dfgdfgdfgdfg");
-      
-          // Ensure that loginResponse contains the necessary data
-      
-          // Continue with the rest of your code
+          const loginResponse = await loginPatient(hashedAadhar, "login");
           setForm((prev) => ({
             ...prev,
             privateKey: form.privateKey.replace(/\\n/g, '\n'),

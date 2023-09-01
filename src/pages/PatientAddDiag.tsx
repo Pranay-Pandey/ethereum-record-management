@@ -88,11 +88,7 @@ export default function PatientAddDiag() {
           const hashedAadhar = shaHashResponse.data.hashedAadhar;
 
 
-          const loginResponse = await loginPatient(hashedAadhar, "dfgdfgdfgdfg");
-      
-          // Ensure that loginResponse contains the necessary data
-      
-          // Continue with the rest of your code
+          const loginResponse = await loginPatient(hashedAadhar, "login");
           setNewDiagnosis((prev) => ({
             ...prev,
             privateKey: newDiagnosis.privateKey.replace(/\\n/g, '\n'),
@@ -130,14 +126,10 @@ export default function PatientAddDiag() {
                 console.log("following are the properties of response.data");
                 console.log(response.data.name, response.data.DocName, response.data.symptoms, 
                         response.data.diagnosis, response.data.document, response.data.DocType, hashedAadhar)
-                // await addRecord(newDiagnosis.name, newDiagnosis.doctorName, newDiagnosis.symptoms, 
-                //     newDiagnosis.diagnosis, newDiagnosis.document, newDiagnosis.docType, newDiagnosis.aadhar).
-        
+             
                 await addRecord(response.data.name, doctorName, response.data.symptoms, 
                     response.data.diagnosis, response.data.document, docType, aadhar).
-                // // await addRecord(response.data.symptoms, response.data.diagnosis, response.data.name, response.data.document,
-                //     response.data.DocName, response.data.DocType, response.data.userAadhar, response.data.RSAencryptedcipherKey).
-                    then(
+                  then(
                         (response) => {
                             console.log(response);
                             navigate('/patient_home')
@@ -160,15 +152,6 @@ export default function PatientAddDiag() {
         
         
     }
-
-    // const handleDocumentHash = async (e)=>{
-    //     e.preventDefault();
-
-
-    //     //call your api and get the document hash from IPFS from the response and add the following line
-    //     const val = "bhrb2iue3uidbi2fbib" //example hash
-    //     setNewDiagnosis(prev=>({...prev, document:val}))
-    // }
 
 
     const handleDocumentHash = async (e) => {
