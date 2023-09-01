@@ -12,19 +12,15 @@
 
   <h2>Tech Stack Used While Building the Project</h2>
   <p>The project utilizes technologies including ethereum blockchain, AES encryption, RSA encryption, IPFS (InterPlanetary File
-    System), and TequitoJS and node libraries like chakra and react for the front end.</p>
+    System), and  and node libraries like chakra and react for the front end.</p>
 
   <h2>Deployed Smart contract link</h2>
   
-  <p>The smart contract address is <code>KT1KKknhpn1iiBqB315okxm7iiscPtpRWgwy</code>
-  You can see it on blockchain explorer <code>https://ghostnet.tzkt.io/KT1KKknhpn1iiBqB315okxm7iiscPtpRWgwy/entrypoints</code></p>
+  You can see it on blockchain explorer <code>https://sepolia.etherscan.io/tx/0x48ea4395a726ec0b3382bf81d710b12734d43001ca846dba44fa753aac374fab</code></p>
 
   <h2>Detailed Presentation PPT</h2>
-
-  [![image](https://github.com/Pranay-Pandey/TezAsia-2k23/assets/79053599/3672caec-1730-45b8-8404-55686a995274)
-](https://github.com/Pranay-Pandey/TezAsia-2k23/blob/main/Dizzyn/PPT.pdf)
-
-[Link to PPT](https://github.com/Pranay-Pandey/TezAsia-2k23/raw/main/Dizzyn/PPT.pdf)
+ 
+[PPT (4).pdf](https://github.com/Pranay-Pandey/ethereum-record-management/files/12500320/PPT.4.pdf)
 
 
 <h2>Demo Video</h2>
@@ -39,9 +35,6 @@ or access the demo video from [here](https://github.com/Pranay-Pandey/TezAsia-2k
 <h2>Live Project Link</h2>
 <p>Can be accessed from the right side of this repository in deployments or you can directly access it from https://hrm-chi.vercel.app/</p>
 
-<h2>Team Info</h2>
-<p>Team name - <b>Dizzyn</b>
-<br>Members - Pranay Pandey</p>
 
   <h2>Features</h2>
   <ul>
