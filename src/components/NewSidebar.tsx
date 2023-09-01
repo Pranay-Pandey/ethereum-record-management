@@ -10,8 +10,7 @@ const Sidebar = () => {
     { icon: FaHome, label: 'Home',link:'/patient_home' },
     { icon: FaUser, label: 'Profile', link:'/patient_profile'},
     { icon: FaUser, label: 'Show Diagnosis',link:'/patient_home' },
-    { icon: FaUser, label: 'Add Diagnosis',link:'/patient_adddiag' },
-    // { icon: FaUser, label: 'Make Appointment',link:'/patient_appointment' },
+    { icon: FaUser, label: 'Add Diagnosis',link:'/patient_adddiag' }
   ];
 
   const [login, setLogin] = useSessionStorage("login", "");

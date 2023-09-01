@@ -5,9 +5,7 @@ import LoginRegister from "../components/LoginRegsiter";
 import UserInfo from "../components/UserInfo";
 import UserDiagnosis from "../components/UserDiagnosis";
 import axios from "axios";
-import Sidebar from "../components/Sidebar";
 import NewDiagnosisForm from "../components/AddDiagnosis";
-import AddAppointment from "../components/AddAppointment";
 
 export default function Patients() {
   // const [loggedIn, setLoggedIn] = useState(true);

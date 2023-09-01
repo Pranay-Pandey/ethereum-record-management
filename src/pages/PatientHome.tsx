@@ -8,7 +8,7 @@ import {
 import axios from 'axios'
 import DiagnosisCard from '../components/DiagnosisCard'
 import Card from "../components/Card";
-import { PatientDialist , loginPatient, controlVisibility} from '../utils/operation'
+import { PatientDialist , loginPatient} from '../utils/operation'
 
 const PatientHome = () => {
 
