@@ -1,7 +1,7 @@
 <h1>Healthcare Record Management Project</h1>
 
   <h2>Overview</h2>
-  <p>The Healthcare Record Management (HRM) project focuses on providing a secure platform for managing patient and doctor information by leveraging the Tezos blockchain and advanced encryption techniques.</p>
+  <p>The Healthcare Record Management (HRM) project focuses on providing a secure platform for managing patient and doctor information by leveraging the ethereum blockchain and advanced encryption techniques.</p>
 
    <h2>Project's Description</h2>
   <p>The Healthcare Record Management (HRM) project aims to provide a platform for the patients, doctors and various healthcare stakeholders where access-controlled data is stored, exchanged and kept as a medical record for a patient. </p>
@@ -11,7 +11,7 @@
     enabling efficient communication between patients and doctors. This project also aims to leverage tools like blockchain, decentralized storage and access control mechanisms to reduce redundancy and protect privacy.</p>
 
   <h2>Tech Stack Used While Building the Project</h2>
-  <p>The project utilizes technologies including Tezos blockchain, AES encryption, RSA encryption, IPFS (InterPlanetary File
+  <p>The project utilizes technologies including ethereum blockchain, AES encryption, RSA encryption, IPFS (InterPlanetary File
     System), and TequitoJS and node libraries like chakra and react for the front end.</p>
 
   <h2>Deployed Smart contract link</h2>
@@ -45,7 +45,7 @@ or access the demo video from [here](https://github.com/Pranay-Pandey/TezAsia-2k
 
   <h2>Features</h2>
   <ul>
-    <li>Utilizes the Tezos blockchain to securely store patient, doctor, and hospital information.</li>
+    <li>Utilizes the ethereum blockchain to securely store patient, doctor, and hospital information.</li>
     <li>Ensures information privacy by offering public visibility to stored data through encryption.</li>
     <li>Employs AES encryption to safeguard individual pieces of sensitive information, guaranteeing data confidentiality.</li>
     <li>Generates unique public/private key pairs for patients and doctors, enabling secure communication.</li>
@@ -68,7 +68,7 @@ or access the demo video from [here](https://github.com/Pranay-Pandey/TezAsia-2k
   <ol>
     <li>Access the project's web interface or APIs to seamlessly interact with the blockchain and effectively manage stored information.</li>
     <li>Ensure secure authentication using your personalized public/private key pair.</li>
-    <li>Encrypt and securely store patient, doctor, and hospital information onto the Tezos blockchain.</li>
+    <li>Encrypt and securely store patient, doctor, and hospital information onto the ethereum blockchain.</li>
     <li>Enhance data privacy with AES encryption, ensuring the confidentiality of sensitive data.</li>
     <li>Control information sharing by securely transmitting encrypted AES keys using the robust RSA algorithm, ensuring limited access.</li>
     <li>Leverage IPFS to securely store diagnosis documents while linking their hash to the encrypted diagnosis information.</li>
@@ -138,11 +138,10 @@ or access the demo video from [here](https://github.com/Pranay-Pandey/TezAsia-2k
   <h2>Getting Started</h2>
   <p>Before using the HRM application, follow these steps:</p>
   <ol>
-    <li>Create a wallet account using the Temple Wallet extension. Install it from
-      <a href="https://chrome.google.com/webstore/detail/temple-tezos-wallet/ookjlbkiijinhpmnjffcofjonbfbgaoc"
-        target="_blank">here</a> and make a new wallet.</li>
-    <li>Obtain funds in your Ghost Net account for transactions. Get them from
-      <a href="https://faucet.ghostnet.teztnets.xyz/" target="_blank">here</a>.</li>
+    <li>Create a wallet account using the Metamask Wallet extension. Install it from
+      chrome extensions and make a new wallet.</li>
+    <li>Obtain funds in your SepoliaETH account for transactions. Get them from
+      a faucet.</li>
   </ol>
 
   <h2>Connecting to the Application</h2>
@@ -150,7 +149,7 @@ or access the demo video from [here](https://github.com/Pranay-Pandey/TezAsia-2k
     <a href="https://hrm-chi.vercel.app/" target="_blank">HRM Application</a>.</p>
   <ol>
     <li>Click on "Connect Wallet" on the top-right corner.</li>
-    <li>Choose "Temple Wallet" if you have it installed, and connect through the browser extension.</li>
+    <li>Choose "metamask" if you have it installed, and connect through the browser extension.</li>
     <li>Your wallet address will be displayed in the navigation bar.</li>
   </ol>
 
