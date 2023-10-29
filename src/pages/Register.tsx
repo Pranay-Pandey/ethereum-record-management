@@ -46,7 +46,8 @@ export default function SignupCard() {
     return values.every((value) => value.trim().length > 0);
   };
 
-  const BASEURL = "https://efficacious-writing-production.up.railway.app/api";
+  
+    const BASE_URL = 'https://ethback-i5fr.onrender.com/api';
 
   const handleSubmit = async () => {
     let data = JSON.stringify(form);
