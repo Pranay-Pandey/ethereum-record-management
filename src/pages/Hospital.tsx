@@ -5,11 +5,13 @@ import Card from '../components/Card';
 const HospitalInfo = () => {
   const [hospitalData, setHospitalData] = useState([]);
 
+  const BASE_URL = 'https://ethback-i5fr.onrender.com/api';
+
   useEffect(() => {
     // Fetch hospital and doctor data from the API
     const fetchHospitalData = async () => {
       try {
-        const response = await axios.get("https://efficacious-writing-production.up.railway.app/api/getHospital");
+        const response = await axios.get(BASE_URL+"/getHospital");
         setHospitalData(response.data.data);
       } catch (error) {
         console.error("Error fetching hospital data:", error);
