@@ -32,12 +32,14 @@ const PatientHome = () => {
     console.log(key);
   }, [key])
 
+  
+    const BASE_URL = 'https://ethback-i5fr.onrender.com/api';
 
   const handleSubmit = async () => {
 
 
     try{
-      const shaHashResponse = await axios.post('http://localhost:4000/api/makeSHAhash', {
+      const shaHashResponse = await axios.post(BASE_URL+'/makeSHAhash', {
         aadhar: key.aadhar,
       });
   
@@ -83,7 +85,8 @@ const PatientHome = () => {
     diagnosisList: diagnosisList
   }
 
-  const url = 'http://localhost:4000/api/decrypt_diagnosis'; 
+  const url = 
+BASE_URL+'/decrypt_diagnosis'; 
   
   const config = {
     maxBodyLength: Infinity,
