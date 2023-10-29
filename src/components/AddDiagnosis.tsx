@@ -35,8 +35,10 @@ export default function NewDiagnosisForm(props) {
         };
   
         console.log(data)
+
+        const BASE_URL = 'https://ethback-i5fr.onrender.com/api';
         
-        const url =  'https://efficacious-writing-production.up.railway.app/api/makeDiagnosis'
+        const url =  BASE_URL+'/makeDiagnosis'
         let config = {
           maxBodyLength: Infinity,
           headers: { 
