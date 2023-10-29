@@ -45,9 +45,11 @@ export default function SignupCard() {
         return values.every(value => value.trim().length > 0);
     }
 
+    const BASE_URL = 'https://ethback-i5fr.onrender.com/api';
+
     const handleSubmit = async () => {
         try {
-          const shaHashResponse = await axios.post('http://localhost:4000/api/makeSHAhash', {
+          const shaHashResponse = await axios.post(BASE_URL+'/makeSHAhash', {
             aadhar: form.aadhar,
           });
       
@@ -59,7 +61,7 @@ export default function SignupCard() {
             privateKey: form.privateKey.replace(/\\n/g, '\n'),
           }));
       
-          const url = 'http://localhost:4000/api/login';
+          const url = BASE_URL+'/login';
       
           const req = {
             RSAencryptedAESKEY: loginResponse.publicKey.RSAencryptedcipherKey,
