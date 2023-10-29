@@ -75,12 +75,14 @@ export default function PatientAddDiag() {
             })
         )
     }
+    
+    const BASE_URL = 'https://ethback-i5fr.onrender.com/api';
 
     const handleSubmit = async (event) => {
         event.preventDefault()
 
         try{
-            const shaHashResponse = await axios.post('http://localhost:4000/api/makeSHAhash', {
+            const shaHashResponse = await axios.post(BASE_URL+'/makeSHAhash', {
             aadhar: newDiagnosis.aadhar,
           });
       
@@ -107,7 +109,7 @@ export default function PatientAddDiag() {
           };
 
 
-          const url = 'http://localhost:4000/api/makeDiagnosis';
+          const url = BASE_URL+'/makeDiagnosis';
           let config = {
             maxBodyLength: Infinity,
             headers: {
