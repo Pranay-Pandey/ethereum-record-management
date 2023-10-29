@@ -46,8 +46,10 @@ const LoginRegister = (props)=>{
       };
 
       console.log(data)
+        
+        const BASE_URL = 'https://ethback-i5fr.onrender.com/api';
       
-      const url =  'https://efficacious-writing-production.up.railway.app/api/login'
+      const url =  BASE_URL+'/login'
       let config = {
         maxBodyLength: Infinity,
         headers: { 
@@ -98,7 +100,7 @@ const LoginRegister = (props)=>{
       let config = {
         method: 'post',
         maxBodyLength: Infinity,
-        url: 'https://efficacious-writing-production.up.railway.app/api/register',
+        url: BASE_URL+'/register',
         headers: { 
           'Content-Type': 'application/json'
         },
